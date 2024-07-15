@@ -1,0 +1,62 @@
+Date: 15th Jul 2024
+
+Installation:
+NodeJS - LTS
+VS Code
+ 
+
+Go to the project folder: LearnPlaywright.
+
+Terminal:
+Command: node --version
+v20.9.0
+
+Command: npm init playwright@latest
+✔ create-playwright@1.17.133 - Yes
+✔ Do you want to use TypeScript or JavaScript? · JavaScript
+✔ Where to put your end-to-end tests? · tests
+✔ Add a GitHub Actions workflow? (y/N) · false
+✔ Install Playwright browsers (can be done manually via 'npx playwright install')? (Y/n) · true
+
+------
+
+> tests > example.spec.js 
+This will have 2 tests to run by default
+
+> playwright.config.js
+Configuration details to run the tests. we also have browser details. 
+  /* Configure projects for major browsers */
+
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
+
+Comment out the browsers: firefox and safari as of now. 
+
+Select the text and do - command+/ to comment out 
+
+------
+
+In the example.spec.js:
+before the close of the test - do "await page.pause();"
+
+
+----
+Running the tests:
+In Headed mode: npx playwright test --headed
+As await page.pause() is there, the user can see the execution.
+
+To view the report:
+npx playwright show-report
+the report will open in http://localhost:9323/ 
