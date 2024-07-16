@@ -1,0 +1,18 @@
+Day 2:
+
+- Playwright Codegen:
+
+- Website for practice:
+https://the-internet.herokuapp.com/login
+
+To record the script using Playwright Codegen:
+npx playwright codegen https://the-internet.herokuapp.com/login
+
+Record the steps and copy the script from codegen to tests > internet_codegen.spec.js
+
+Change the test to "test.only()"
+so, only this test will run when execute.
+
+execute: npx playwright codegen --headed
+
+report: npx playwright show-report
