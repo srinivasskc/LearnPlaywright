@@ -1,0 +1,13 @@
+Date: 17th Jul 2024
+
+Chrome Dev Tools - Console:
+$$('#username')
+
+In jQuery, the $ symbol is used to select elements on the page. However, when you want to select an element using an ID, you need to use the # symbol, which is a part of the jQuery selector syntax.
+
+The reason you see double $$ in some cases is that the first $ is used to invoke the jQuery function, and the second $ is used to select the element using the # symbol.
+
+
+Regular expression validator tools:
+https://regex101.com/
+https://regexr.com/
