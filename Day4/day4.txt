@@ -1,0 +1,11 @@
+Date: 18th Jul 2024
+
+Create a webpage with html, css, javascript with one button
+
+counter gets increased after every click on button.
+
+Create a local server and run the code locally.
+
+
+VS Code Extension:
+Live Server by Ritwick Dey
