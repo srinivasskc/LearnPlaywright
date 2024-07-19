@@ -1,0 +1,8 @@
+Date: 19th Jul 2024
+
+Selectors:
+By ID
+By Class
+By Tag and Class Name
+By Attribute Name and Value.
+
